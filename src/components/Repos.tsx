@@ -32,7 +32,12 @@ function Repos() {
                     </a>
                 </div>
                 <div className="card-body">
-                    {repo.language}
+                    <div>
+                        {repo.description}
+                    </div>
+                    <div className="badge-primary w-fit p-1 rounded-lg">
+                        {repo.language}
+                    </div>
                 </div>
                 <div className="card-actions p-2 justify-end">
                     <button className="btn" onClick={() => toggleFavorite(repo.id)}>

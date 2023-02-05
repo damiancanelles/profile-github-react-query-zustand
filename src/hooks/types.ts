@@ -3,6 +3,7 @@ export interface Repos {
     name: string
     html_url: string
     language: string
+    description: string
 }
 
 export interface Profile {
